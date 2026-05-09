@@ -58,6 +58,9 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
-    color: white;
     background-color: var(--bars);
+}
+footer a {
+    text-decoration: none;
+    color: white;   
 }
