@@ -1,10 +1,14 @@
 import "./styles.css";
-import wallpaper from "./wallpaper.jpg";
-import { greeting } from "./greeting.js";
+import About from "./Components/About.js";
+import Home from "./Components/Home.js";
+import Menu from "./Components/Menu.js";
 
-const image = document.createElement("img");
-image.src = wallpaper;
+//DOM References
+const homeBtn = document.getElementById("home-btn");
+const menuBtn = document.getElementById("menu-btn");
+const aboutBtn = document.getElementById("about-btn");
 
-document.body.appendChild(image);
-
-console.log(greeting);
+//Event Listeners
+menuBtn.addEventListener("click", Menu);
+homeBtn.addEventListener("click", Home);
+aboutBtn.addEventListener("click", About);
