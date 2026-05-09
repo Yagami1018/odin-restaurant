@@ -1,3 +1,63 @@
+/* Document */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --bars: hsl(0, 0%, 50%);
+}
 body {
-    background-color: rebeccapurple;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 80%);
+}
+/* Header */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bars);
+    width: 100vw;
+    box-shadow: 0 3px 3px hsl(0, 0%, 0%,0.6);
+}
+/* Buttons */
+.buttons {
+    color: white;
+    background-color: hsl(39, 100%, 66%);
+    font-size: 2rem;
+    border-radius: 12px;
+    border: none;
+    margin: 10px;
+    padding: 12px 20px;
+    box-shadow: 0 2px 2px hsl(0, 0%, 0%,0.5);
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: hsl(39, 100%, 70%);
+}
+.buttons:active{
+    background-color: hsl(39, 100%, 74%);
+    box-shadow: 0 0px 0px black;
+
+}
+/* Content */
+#content{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color:white;
+    color: hsl(33, 100%, 35%);
+    border-radius: 20px;
+    width: 99vw;
+    height: 85vh;
+}
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--bars);
 }
