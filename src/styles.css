@@ -53,7 +53,7 @@ nav {
   color: hsl(33, 100%, 35%);
   border-radius: 20px;
   width: 99vw;
-  height: 85vh;
+  min-height: 85vh;
 }
 p {
   width: 60%;
