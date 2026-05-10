@@ -58,17 +58,17 @@ ul {
     box-shadow: 2px 2px 2px black;
 }
 #content {
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    align-self: center;
-    background-color: white;
-    color: hsl(33, 100%, 35%);
-    border-radius: 20px;
-    min-width: 99vw;
-    min-height: 85vh;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  align-self: center;
+  background-color: white;
+  color: hsl(33, 100%, 35%);
+  border-radius: 20px;
+  width: 99vw;
+  height: 85vh;
 }
 p {
     width: 60%;
