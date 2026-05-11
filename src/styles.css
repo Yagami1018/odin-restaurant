@@ -1,132 +1,131 @@
 /* Document */
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
 :root {
-  --bars: hsl(0, 0%, 50%);
-  --cards: hsl(0, 0%, 95%, 0.4);
+    --bars: hsl(0, 0%, 50%);
+    --cards: hsl(0, 0%, 95%, 0.4);
 }
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  min-width: max-content;
-  background-color: hsl(0, 0%, 80%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: max-content;
+    background-color: hsl(0, 0%, 80%);
 }
 /* Header */
 nav {
-  display: flex;
-  justify-content: center;
-  background-color: var(--bars);
-  min-width: 100vw;
-  box-shadow: 0 3px 3px hsl(0, 0%, 0%, 0.6);
+    display: flex;
+    justify-content: center;
+    background-color: var(--bars);
+    min-width: 100vw;
+    box-shadow: 0 3px 3px hsl(0, 0%, 0%, 0.6);
 }
 .buttons {
-  color: white;
-  background-color: hsl(39, 100%, 66%);
-  font-size: 2rem;
-  border-radius: 12px;
-  border: none;
-  margin: 10px;
-  padding: 12px 20px;
-  box-shadow: 0 2px 2px hsl(0, 0%, 0%, 0.5);
-  cursor: pointer;
+    color: white;
+    background-color: hsl(39, 100%, 66%);
+    font-size: 2rem;
+    border-radius: 12px;
+    border: none;
+    margin: 10px;
+    padding: 12px 20px;
+    box-shadow: 0 2px 2px hsl(0, 0%, 0%, 0.5);
+    cursor: pointer;
 }
 .buttons:hover {
-  background-color: hsl(39, 100%, 70%);
+    background-color: hsl(39, 100%, 70%);
 }
 .buttons:active {
-  background-color: hsl(39, 100%, 74%);
-  box-shadow: 0 0px 0px black;
+    background-color: hsl(39, 100%, 74%);
+    box-shadow: 0 0px 0px black;
 }
 
 /* Content */
 li {
-  font-size: 2.3rem;
-  margin-bottom: 20px;
- 
+    font-size: 2.3rem;
+    margin-bottom: 20px;
 }
 h1 {
-  margin: 20px;
+    margin: 20px;
 }
 ul {
-  background-color: var(--cards);
-  padding: 20px 50px;
-  border-radius: 12px;
-  box-shadow: 2px 2px 2px black;
+    background-color: var(--cards);
+    padding: 20px 50px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px black;
 }
 #content {
-  font-size: 1.4rem;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-  align-self: center;
-  background-color: white;
-  color: hsl(33, 100%, 35%);
-  border-radius: 20px;
-  min-width: 99vw;
-  min-height: 85vh;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+    background-color: white;
+    color: hsl(33, 100%, 35%);
+    border-radius: 20px;
+    min-width: 99vw;
+    min-height: 85vh;
 }
 p {
-  width: 60%;
-  text-indent: 50px;
-  text-wrap-style: balance;
-  background-color: var(--cards);
-  padding: 20px 60px;
-  border-radius: 12px;
-  box-shadow: 2px 2px 2px black;
+    width: 60%;
+    text-indent: 50px;
+    text-wrap-style: balance;
+    background-color: var(--cards);
+    padding: 20px 60px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px black;
 }
 .card-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 650px;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 650px;
+    gap: 20px;
 }
 .card {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--cards);
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 2px 2px 2px black;
-  width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cards);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px black;
+    width: 700px;
 }
 .dish-name,
 .dish-price {
-  font-weight: 900;
-  align-self: center;
+    font-weight: 900;
+    align-self: center;
 }
 .dish-name {
-  border-bottom: 1px solid hsl(33, 100%, 35%, 0.5);
-  width: 100%;
-  text-align: center;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+    border-bottom: 1px solid hsl(33, 100%, 35%, 0.5);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 .dish-desc {
-  text-indent: 50px;
+    text-indent: 50px;
 }
 .dish-price {
-  margin-top: 10px;
-  border-top: 1px solid hsl(33, 100%, 35%, 0.5);
-  width: 100%;
-  text-align: center;
-  padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid hsl(33, 100%, 35%, 0.5);
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
 }
 
 /* Footer */
 footer {
-  display: flex;
-  justify-content: center;
-  font-size: 1.6rem;
-  background-color: var(--bars);
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    background-color: var(--bars);
 }
 footer a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
