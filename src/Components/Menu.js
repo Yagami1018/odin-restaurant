@@ -2,39 +2,38 @@ import { content } from "./Content.js";
 import Dishes from "./Dishes.js";
 
 export default function Menu() {
-  content.innerHTML = "";
-  document.body.style.minWidth="max-content"
+    content.innerHTML = "";
+    document.body.style.minWidth = "max-content";
 
-  //DOM References
-  const newElement = document.createElement("h1");
-  const cardContainer = document.createElement("div");
-  newElement.textContent = `Welcome to ${this.textContent}`;
-
-  for (let dish of Dishes) {
     //DOM References
-    const card = document.createElement("div");
-    const name = document.createElement("div");
-    const description = document.createElement("div");
-    const price = document.createElement("div");
+    const newElement = document.createElement("h1");
+    const cardContainer = document.createElement("div");
+    newElement.textContent = `Welcome to ${this.textContent}`;
 
-    //Text Contents
-    name.textContent = `Name: ${dish.name}`;
-    description.textContent = `${dish.desc}`;
-    price.textContent = `Price: ${dish.price}`;
+    for (let dish of Dishes) {
+        //DOM References
+        const card = document.createElement("div");
+        const name = document.createElement("div");
+        const description = document.createElement("div");
+        const price = document.createElement("div");
 
-    //Card Style
-    card.classList.add("card");
-    name.classList.add("dish-name");
-    description.classList.add("dish-desc");
-    price.classList.add("dish-price");
+        //Text Contents
+        name.textContent = `Name: ${dish.name}`;
+        description.textContent = `${dish.desc}`;
+        price.textContent = `Price: ${dish.price}`;
 
-    card.append(name, description, price);
+        //Card Style
+        card.classList.add("card");
+        name.classList.add("dish-name");
+        description.classList.add("dish-desc");
+        price.classList.add("dish-price");
 
-    
-    cardContainer.appendChild(card);
-  }
-  
-  cardContainer.classList.add("card-container");
-  
-  content.append(newElement, cardContainer);
+        card.append(name, description, price);
+
+        cardContainer.appendChild(card);
+    }
+
+    cardContainer.classList.add("card-container");
+
+    content.append(newElement, cardContainer);
 }
