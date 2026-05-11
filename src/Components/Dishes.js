@@ -26,6 +26,11 @@ const burger = new Dish(
   "A very tasty Hamburger, made with explotions of flavors of various sources, only for clients with a huge appettite since it's really big.",
   "$24.80",
 );
-const Dishes = [pizza, spaghetti, lasagna, burger];
+const taco = new Dish(
+  "Taco",
+  "Mexican taco, it's not suited to everyone, it has a lot of spices, and it's not recommended to customers who are'nt used to really spicy foods.",
+  "$9.20",
+);
+const Dishes = [pizza, spaghetti, lasagna, burger,taco];
 
 export default Dishes;
