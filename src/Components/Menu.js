@@ -30,10 +30,11 @@ export default function Menu() {
 
     card.append(name, description, price);
 
-    cardContainer.classList.add("card-container");
-
+    
     cardContainer.appendChild(card);
   }
-
+  
+  cardContainer.classList.add("card-container");
+  
   content.append(newElement, cardContainer);
 }
