@@ -5,6 +5,7 @@
 }
 :root {
   --bars: hsl(0, 0%, 50%);
+  --cards: hsl(0, 0%, 95%, 0.4);
 }
 body {
   margin: 0;
@@ -43,9 +44,19 @@ nav {
 }
 
 /* Content */
-li{
+li {
   font-size: 2.3rem;
   margin-bottom: 20px;
+ 
+}
+h1 {
+  margin: 20px;
+}
+ul {
+  background-color: var(--cards);
+  padding: 20px 50px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px black;
 }
 #content {
   font-size: 1.4rem;
@@ -56,7 +67,6 @@ li{
   align-self: center;
   background-color: white;
   color: hsl(33, 100%, 35%);
-  gap: 20px;
   border-radius: 20px;
   min-width: 99vw;
   min-height: 85vh;
@@ -65,8 +75,12 @@ p {
   width: 60%;
   text-indent: 50px;
   text-wrap-style: balance;
+  background-color: var(--cards);
+  padding: 20px 60px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px black;
 }
-.card-container{
+.card-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -76,7 +90,7 @@ p {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: hsl(0, 0%, 95%, 0.4);
+  background-color: var(--cards);
   padding: 20px;
   border-radius: 12px;
   box-shadow: 2px 2px 2px black;
@@ -87,19 +101,19 @@ p {
   font-weight: 900;
   align-self: center;
 }
-.dish-name{
-  border-bottom: 1px solid hsl(33, 100%, 35%,0.5);
+.dish-name {
+  border-bottom: 1px solid hsl(33, 100%, 35%, 0.5);
   width: 100%;
   text-align: center;
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
-.dish-desc{
+.dish-desc {
   text-indent: 50px;
 }
 .dish-price {
   margin-top: 10px;
-  border-top: 1px solid hsl(33, 100%, 35%,0.5);
+  border-top: 1px solid hsl(33, 100%, 35%, 0.5);
   width: 100%;
   text-align: center;
   padding-top: 10px;
