@@ -17,10 +17,7 @@ export default function About() {
   email.textContent = "Email: fakeaccount@fakemail.com";
   phone.textContent = "Phone: 1-1456-7854";
 
-  ul.appendChild(address);
-  ul.appendChild(email);
-  ul.appendChild(phone);
+  ul.append(address, email, phone);
 
-  content.appendChild(newElement);
-  content.appendChild(ul);
+  content.append(newElement,ul);
 }
